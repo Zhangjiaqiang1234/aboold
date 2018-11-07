@@ -1,0 +1,41 @@
+module.exports = {
+  header: {
+    home: '首页',
+    TEAM: '团队',
+    ROADMAP: '规划',
+    WHITEPAPER: '白皮书',
+    language: '语言',
+    English: '英文',
+    Chinese: '中文',
+    Japanese: '日文',
+    EN: 'EN',
+    CN: 'CN',
+    downLoad: 'APP下载',
+    ios: 'iOS APP下载',
+    android: '安卓APP下载'
+  },
+  index: {
+    err: '网络错误',
+    floor1A: 'ABO：医疗数据共享和智能化协议平台',
+    floor1B: '依托区块链技术实现医疗数据所有权和管理权向用户的回归，让个体享受更好的医疗服务，创建更健康的医疗生态',
+    floor2: '医疗大健康行业痛点分析',
+    floor2A: '医疗数据用户无法获得，难于保存。看病难，看病贵，医疗服务差。',
+    floor2B: '基层医院无人问，三甲医院挤破头。医疗效率低。医患关系紧张。',
+    floor2C: '医药器械研发成本高，周期长。入院使用渠道复杂，阻力重重。',
+    floor2D: '监管机构无法获得疫情，医院，医保，药品的真实情况。',
+    floor3: 'ABO技术说明',
+    floor4: 'ABO产品应用',
+    floor4_user: '用户应用',
+    floor4_doctor: '医生端应用',
+    floor4_service: '服务商应用',
+    floor4_research: '监管和科研机构',
+    floor6: '发展规划',
+    floor6A: '分布式应用上线',
+    floor6B: '公开ABO数据协议和平台',
+    floor6C: 'ABO交易所上市',
+    floor6D: 'ABO钱包发布',
+    floor6E: 'ABO官网发布',
+    floor6F: 'ABO项目启动',
+    floor8: '合作机构'
+  }
+}
