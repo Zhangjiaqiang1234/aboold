@@ -33,10 +33,12 @@
           <!-- <a href="itms-services://?action=download-manifest&url=https://abochain.io/manifest.plist" target='_blank'>
             <img src="../assets/img/bg1/IOS.png" alt="">
           </a> -->
-          <a href="https://www.abochain.io/download/ios" target='_blank' style="height:100%" nofollow>
+          <!-- href="https://www.abochain.io/download/ios" -->
+          <a href="http://47.244.108.42/download/ios" target='_blank' style="height:100%" nofollow>
             <img src="../assets/img/bg1/IOS.png" alt="">
           </a>
-           <a href='https://www.abochain.io/download/android' target='_blank' style="height:100%;" nofollow>
+          <!-- https://www.abochain.io/download/android -->
+           <a href='http://47.244.108.42/download/android' target='_blank' style="height:100%;" nofollow>
             <img src="../assets/img/bg1/Android.png" alt="" >
           </a>
           <!-- <a href="https://abochain.io/1.html" target='_blank'>
