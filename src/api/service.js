@@ -1,5 +1,6 @@
 import axios from 'axios'
-const baseUrl = 'http://112.74.58.173:8082'
+const baseUrl = 'http://39.108.217.205:8060'
+// const baseUrl = 'http://112.74.58.173:8082' // 旧的接口
 // 获取图形验证码
 export const getCaptcha = () => {
   var url = '/cf/captcha.jpg'

@@ -12,14 +12,16 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/cf': {
-        target: 'http://112.74.58.173:8082/',  // 通过本地服务器将你的请求转发到这个地址
+        target: 'http://39.108.217.205:8060/',  // 通过本地服务器将你的请求转发到这个地址
+        // target: 'http://112.74.58.173:8082/',  // 旧的
         changeOrigin: true,  // 设置这个参数可以避免跨域
         // pathRewrite: {
         //   '/cf': '/cf'
         // }
       },
       '/api': {
-        target: 'http://120.79.26.58:8999/',  // 通过本地服务器将你的请求转发到这个地址
+        target: 'http://39.108.217.205:8060/',  // 通过本地服务器将你的请求转发到这个地址
+        // target: 'http://120.79.26.58:8999/',  // 旧的
         changeOrigin: true,  // 设置这个参数可以避免跨域
         // pathRewrite: {
         //   '/cf': '/cf'
