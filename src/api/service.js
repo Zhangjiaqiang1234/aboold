@@ -199,6 +199,6 @@ export const getNews = (params) => {
 // }
 // app下载
 export const appVersionList = (data) => {
-  var url = '/api/version/list'
+  var url = baseUrl + '/api/version/list'
   return axios.post(url, data)
 }
