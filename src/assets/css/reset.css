@@ -10,3 +10,8 @@ a {
 button{
   cursor: pointer;
 }
+img{
+	border: none;
+	width: auto;
+	height: auto;
+}
