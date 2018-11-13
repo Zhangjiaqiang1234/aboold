@@ -5,7 +5,8 @@
     <div class="footer">
       <div>
         <img src="../assets/img/app/footer.png" alt="">
-        <a href="http://tg.abochain.io/download"><el-button type="mini">&nbsp;&nbsp;&nbsp;下载&nbsp;&nbsp;&nbsp;</el-button></a>
+        <!-- href = http://tg.abochain.io/download -->
+        <a href="http://47.244.108.42/download"><el-button type="mini">&nbsp;&nbsp;&nbsp;下载&nbsp;&nbsp;&nbsp;</el-button></a>
       </div>
     </div>
   </div>

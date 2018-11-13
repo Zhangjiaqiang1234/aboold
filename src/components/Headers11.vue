@@ -19,10 +19,10 @@
         <li :class="!isEn ? 'en' : 'zh'">
           <a href='/index#roadmap'>{{$t("header.ROADMAP")}}</a>
         </li>
-        <li :class="!isEn ? 'en' : 'zh'">
+        <!-- <li :class="!isEn ? 'en' : 'zh'">
           <a v-if='isEn' href='http://www.abochain.io/ABO-EN0913.pdf' target="_blank">{{$t("header.WHITEPAPER")}}</a>
           <a v-else href='http://www.abochain.io/ABO-CN0913.pdf' target="_blank">{{$t("header.WHITEPAPER")}}</a>
-        </li>
+        </li> -->
           <!-- <li><a href='#team'>TEAM</a></li> -->
         <li :class="!isEn ? 'en' : 'zh'">
           <router-link to='/index'>{{$t("header.home")}}</router-link>

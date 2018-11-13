@@ -16,6 +16,22 @@ npm run build
 
 # build for production and view the bundle analyzer report
 npm run build --report
+
+# 原来网址：http://www.abochain.io  现在网址：http://47.244.108.42:8080/
+
+# 注意事项：安装的依赖中 vue-particles/index.js 中 要改成 
+/* eslint-disable */
+import particles from './vue-particles.vue'
+
+var VueParticles = {
+    install: function (Vue, options) {
+        Vue.component('vue-particles', particles)
+    }
+}
+
+export default VueParticles
+/* eslint-disable */
+否则IE下会报错
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
