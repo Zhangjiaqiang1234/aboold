@@ -34,11 +34,11 @@
             <img src="../assets/img/bg1/IOS.png" alt="">
           </a> -->
           <!-- href="https://www.abochain.io/download/ios" -->
-          <a href="http://47.244.108.42:8080/download/ios" target='_blank' style="height:100%" nofollow>
+          <a href="/download/ios" target='_blank' style="height:100%" nofollow>
             <img src="../assets/img/bg1/IOS.png" alt="">
           </a>
           <!-- https://www.abochain.io/download/android -->
-           <a href='http://47.244.108.42:8080/download/android' target='_blank' style="height:100%;" nofollow>
+           <a href='/download/android' target='_blank' style="height:100%;" nofollow>
             <img src="../assets/img/bg1/Android.png" alt="" >
           </a>
           <!-- <a href="https://abochain.io/1.html" target='_blank'>
