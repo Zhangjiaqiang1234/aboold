@@ -17,7 +17,7 @@ npm run build
 # build for production and view the bundle analyzer report
 npm run build --report
 
-# 原来网址：http://www.abochain.io  现在网址：http://47.244.108.42:8080/
+# 官网网址：http://www.abochain.io
 
 # 注意事项：安装的依赖中 vue-particles/index.js 中 要改成 
 /* eslint-disable */
