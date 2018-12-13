@@ -4,6 +4,7 @@ import Router from 'vue-router'
 import index from '@/views/Index'
 import Page404 from '@/views/Page404'
 import News from '@/views/News'
+import Buy from '@/views/Buy/Buy'
 import Download from '@/views/download/index'
 
 Vue.use(Router)
@@ -44,6 +45,22 @@ const router = new Router({
       component: News,
       meta: {
         title: 'ABO'
+      }
+    },
+    {
+      path: '/buy',
+      name: 'buy',
+      component: Buy,
+      meta: {
+        title: '详情页'
+      }
+    },
+    {
+      path: '/buy/:id', // 这是跳转到商城的详情页的
+      name: 'buy',
+      component: Buy,
+      meta: {
+        title: '详情页'
       }
     },
     {

@@ -23,6 +23,8 @@ Vue.use(ElementUI)
 Vue.use(VueParticles)
 Vue.use(VueI18n)
 
+Vue.prototype.baseUrl = 'http://39.108.217.205:8082';
+
 const i18n = new VueI18n({ // 决定当前是使用中文还是英文
   locale: sessionStorage.getItem('encn') || (navigator.language === 'zh-CN' || navigator.language === 'zh' ? 'zh-CN' : 'en-US'),
   messages: {
