@@ -54,12 +54,6 @@ body{
 	margin: 0 auto;
 	position: relative;
 }
-html,body{
-	min-height: 100vh;
-}
-body{
-	max-width: 750px;
-}
 input,textarea,button{
 	border: none;
 	outline: none;

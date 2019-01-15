@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="buy-box">
 		<!-- 封面图 -->
 		<div class="cover-image">
 			<img :src="data.cover_image">
@@ -48,7 +48,7 @@
 			<!-- 右侧 -->
 			<div class="choose">
 				<div class="add-to-car">加入购物车</div>	
-				<div class="to-buy">加入购物车</div>	
+				<div class="to-buy">立即购买</div>	
 			</div>
 		</div>
 	</div>
@@ -63,7 +63,12 @@ import axios from 'axios'
 export default{
 	data() {
 		return {
-			data: {}
+			data: {
+				price: 0,
+				freight: 0,
+				sale_count: 0,
+				in_stock: 0
+			}
 		}
 	},
 	created() {
@@ -81,20 +86,24 @@ export default{
   //       })
 
 	  	axios({
-		    method: 'post',
-		    url: this.baseUrl + '/admin/v1/article/getArticle',
-		    data: {
-		    	access_token: '670026ba-d939-4803-990e-02d5aa0799bc',
-		        data: '{"id":"56"}'
-		    },
+		    method: 'get',
+		    url: this.baseUrl + '/admin/v1/goods/getArticle?data={"id":'+this.data.id+'}',
+		    // data: {
+		    // 	access_token: '8bccfae6-cb77-41e8-820a-8964520e2c15',
+		    //     data: { data: JSON.stringify({ 'id': 56 }) }
+		    // },
 		    withCredentials:false
 		})
 		.then(function (res) {
-		    console.log(res);
+		    console.log(res.request.response);
 		    // 算了  就当数据拿到了
-		    res = {"code":200,"message":"操作完成","time":"1544720784","data":{"id":63,"title":"Royal latex 2泰国皇家乳胶枕头原装进口正品天然橡胶保护颈椎枕芯","read_count":0,"content":"","news_url":"http:\/\/127.0.0.1:8080\/Buy\/12","keywords":"乳胶,枕头","sale_count":2563,"coupon":10,"freight":6,"in_stock":22252,"create_time":"2018-12-13 23:39:33","modify_time":"2018-12-13 23:39:33","create_by":0,"modified_by":0,"news_type":4,"add_read_count":0,"order_num":1,"cover_image":"https:\/\/oba-oss-hd.oss-cn-shanghai.aliyuncs.com\/test\/2018-12-13\/e13a7a90b7f441c2b9c20ff81fa0c30a-1544715665177.png","price":"256.00","show_flag":1,"release_time":"2018-12-13 23:41:46"}};
-		    that.data = res.data;
-
+		    // res = {"code":200,"message":"操作完成","time":"1544720784","data":{"id":63,"title":"Royal latex 2泰国皇家乳胶枕头原装进口正品天然橡胶保护颈椎枕芯","read_count":0,"content":"","news_url":"http:\/\/127.0.0.1:8080\/Buy\/12","keywords":"乳胶,枕头","sale_count":2563,"coupon":10,"freight":6,"in_stock":22252,"create_time":"2018-12-13 23:39:33","modify_time":"2018-12-13 23:39:33","create_by":0,"modified_by":0,"news_type":4,"add_read_count":0,"order_num":1,"cover_image":"https:\/\/oba-oss-hd.oss-cn-shanghai.aliyuncs.com\/test\/2018-12-13\/e13a7a90b7f441c2b9c20ff81fa0c30a-1544715665177.png","price":"256.00","show_flag":1,"release_time":"2018-12-13 23:41:46"}};
+		    res = JSON.parse(res.request.response);
+		    if(res.code == 200){
+		    	that.data = res.data;
+		    }else if(res.code == 0){
+		    	// alert('跳转链接不正确');
+		    }
 		})
 		.catch(function (error) {
 		    console.log(error);
@@ -103,9 +112,17 @@ export default{
 };
 </script>
 
-<style scope>
+<style scoped>
 @import '../../styles/base.css';
-body{
+html,body{
+	min-height: 100vh;
+}
+.buy-box{
+	margin: 0 auto;
+	max-width: 750px;
+	min-height: 100vh;
+}
+.buy-box{
 	background: #F5F5F5;
 	padding-bottom: 1rem;
 }
@@ -117,6 +134,9 @@ body{
 	display: block;
 	width: 100%;
 	height: auto;
+	min-height: 7.5rem;
+	border:none;
+	background: #fff;
 }
 .price-wrap{
 	box-sizing: border-box;
