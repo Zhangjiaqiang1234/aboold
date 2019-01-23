@@ -1,1 +1,6 @@
 2018-12-13 abo 页面进行了备份
+
+修改下载链接的时候需要更新的3个地方：
+1、abo 官网的 download/index.vue
+2、糖果的 views\account.vue
+3、糖果的 views\DownLoad.vue

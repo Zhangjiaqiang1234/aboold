@@ -11,7 +11,7 @@ export default function() {
 
     function resize(){
         var clientWidth = document.documentElement.clientWidth;
-        if(clientWidth < designWidth || isbuy){
+        if(clientWidth < designWidth && isbuy){
             var fontSize = clientWidth / designWidth * 100;
             fontSize = fontSize > 100 ? 100 : fontSize;
             document.documentElement.style.fontSize = fontSize+"px";

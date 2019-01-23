@@ -113,7 +113,7 @@ export default{
 </script>
 
 <style scoped>
-@import '../../styles/base.css';
+/*@import '../../styles/base.css';*/
 html,body{
 	min-height: 100vh;
 }

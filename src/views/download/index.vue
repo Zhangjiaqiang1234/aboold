@@ -109,12 +109,16 @@ export default {
         pageSize: 2,
         typeId: this.versionType
       })
-        .then(res => {
-          this.versionName = res.data.data[0].versionName
-          this.size = res.data.data[0].versionSize
-          this.time = res.data.data[0].modifyTime.split(' ')[0]
+      .then(res => {
+          var data = res.data.data.sort((a,b) => { // 将数组进行排序，修改时间最前的放在最前面
+            return (new Date(b.modifyTime)).getTime() - (new Date(a.modifyTime)).getTime();
+          })
+          data = data[0];
+          this.versionName = data.versionName
+          this.size = data.versionSize
+          this.time = data.modifyTime.split(' ')[0]
           this.version = res.data.data
-          this.versionInfo = res.data.data[0].updateDescription.replace(/\s/g, '').split(';')
+          this.versionInfo = data.updateDescription.replace(/\s/g, '').split(';')
         })
     }
   }
