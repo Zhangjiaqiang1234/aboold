@@ -25,7 +25,7 @@
       </el-row>
       <el-row type="flex" justify="center">
         <el-col :xs="12" :sm="5" :md="5" :lg="4" :xl="3" class="button">
-          <a href="http://www.abochain.io/ABO_v1.4.1.apk" v-if="versionType===1"><el-button type="primary" round>点击安装</el-button></a>
+          <a href="http://www.abochain.io/ABO_v1.4.2.apk" v-if="versionType===1"><el-button type="primary" round>点击安装</el-button></a>
           <!-- href = itms-services://?action=download-manifest&url=https://www.abochain.io/manifest.plist -->
           <a href="itms-services://?action=download-manifest&url=https://plist.gunchung.com/com.aboCompany.ABOIOS_1542703236.plist" v-if="versionType===2"><el-button type="primary" round>点击安装</el-button></a>
           <small class="text-center textColor" style="font-size:12px">或者用手机扫描二维码安装</small>
