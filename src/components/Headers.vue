@@ -26,10 +26,10 @@
           </el-dropdown>
         </li>
         <!-- 白皮书 -->
-        <!-- <li :class="isEn ? 'en' : 'zh'">
-          <a v-if='isEn' href='http://www.abochain.io/ABO-EN0913.pdf' target="_blank">{{$t("header.WHITEPAPER")}}</a>
-          <a v-else href='http://www.abochain.io/ABO-CN0913.pdf' target="_blank">{{$t("header.WHITEPAPER")}}</a>
-        </li> -->
+        <li :class="isEn ? 'en' : 'zh'">
+          <a v-if='isEn' href='http://www.abochain.io/ABO_EN.pdf' target="_blank">{{$t("header.WHITEPAPER")}}</a>
+          <a v-else href='http://www.abochain.io/ABO_CN.pdf' target="_blank">{{$t("header.WHITEPAPER")}}</a>
+        </li>
         <li :class="isEn ? 'en' : 'zh'">
           <a href='/index#roadmap'>{{$t("header.ROADMAP")}}</a>
         </li>
